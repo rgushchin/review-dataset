@@ -1,0 +1,11 @@
+|------------------------------------------+---------------------+--------------------------------------------------------------------------------------------|
+| commit                                   | bug category        | bug description                                                                            |
+|------------------------------------------+---------------------+--------------------------------------------------------------------------------------------|
+| 12e423ba4eaed7b1561b677d32e6599f932d03db | logic               | bool logic in process_mrelease() was inverted by mistake                                   |
+| 09c46563ff6d5f090211e48ff1fdba0ec7f4c97f | logic               | error handling is implemented ionly for if (new_slab) case                                 |
+| 6aaced5abd32e2a57cd94fd64f824514d0361da8 | logic               | memory accounting issue, potentially leading to *2 of NR_FREE_PAGES                        |
+| f04b0fedbe714f822bd066b319a60faa39a985a1 | div by zero         | potential division by zero in damon_get_intervals_score()                                  |
+| 15e8156713cc38031642fafc8baf7d53f19f2e83 | memory leak         | in alloc_shrinker_info() when shrinker_unit_alloc() returns an error, info won't be freed. |
+| 0dea116876eefc9c7ca9c5d74fe665481e499fa3 | wrong memory access | it's not safe to touch string data after 0                                                 |
+| 73f576c04b9410ed19660f74f97521bee6e1c546 | race                | access to idr space is not properly synchronized                                           |
+| 8a931f801340c2be10552c7b5622d5f4852f3a36 | div by zero         | div by zero when when parent_usage == siblings_protected                                   |
