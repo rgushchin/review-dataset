@@ -1,0 +1,8 @@
+|------------------------------------------+--------------------+----------------------------------------------------------------------------------------|
+| commit                                   | bug category       | bug description                                                                        |
+|------------------------------------------+--------------------+----------------------------------------------------------------------------------------|
+| b84621d96ee0221e0bfbf9f477bbec7a5077c464 | resource leak      | if sg_alloc_table_from_pages() fails, io_import_umem() returns without unpinning pages |
+| 262ab205180d2ba3ab6110899a4dbe439c51dfaa | resource leak      | pages are leaked if io_account_mem() fails                                             |
+| a5c98e9424573649e59988199a3356a79c9e1fd9 | resource leak      | io_release_dmabuf() is missed if (total_size < off + len)                              |
+| 0f8baa3c9802fbfe313c901e1598397b61b91ada | resource leak      | put_task_struct() is missing on an error path                                          |
+| ef490275297267d9461733ecd9b02bd3b798b3a4 | double declaration | io_uring_cmd_import_fixed_vec() declared twice                                         |
