@@ -9,3 +9,13 @@
 | 0dea116876eefc9c7ca9c5d74fe665481e499fa3 | wrong memory access | it's not safe to touch string data after 0                                                 |
 | 73f576c04b9410ed19660f74f97521bee6e1c546 | race                | access to idr space is not properly synchronized                                           |
 | 8a931f801340c2be10552c7b5622d5f4852f3a36 | div by zero         | div by zero when when parent_usage == siblings_protected                                   |
+│ a3477c9e02cc9d62a7c8bfc4e7453f5af9a175aa | NONE                |                                                                                            |
+│ 9b5c87d47949292ff21ee2fadd1e83820662a430 | NONE                |                                                                                            |
+│ 7269ed4af344184ab9bdf318fe8864cf64849735 | NONE                |                                                                                            |
+│ 7591c127f3b17d5879f18819cad7058bf3a2e276 | NONE                |                                                                                            |
+│ da0c02516c501b43bd39ad4aca5779c86153d143 | NONE                |                                                                                            |
+│ 28e98022b31efdb8f1ba310d938cd9b97ededfe4 | NONE                |                                                                                            |
+│ 8d42abbfa4efe5fced63c0157d55f30347d7802c | NONE                |                                                                                            |
+│ 78c0ed09131b772f062b986a2fcca6600daa6285 | NONE                |                                                                                            |
+│ 3f28bbe56c7b77e73f1dd0515cad009cfdd64962 | NONE                |                                                                                            |
+│ 3738290bfc99606787f515a4590ad38dc4f79ca4 | NONE                |                                                                                            |
